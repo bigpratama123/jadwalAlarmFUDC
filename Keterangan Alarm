@@ -1,0 +1,70 @@
+
+# Keterangan Semua Versi(Raspberry & Arduino) Daftar Alarm Biasa:	
+(0:1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+(22:1,10,3,1,0,3,4,0,6,7)
+Index 0 = 22 -> Jam
+Index 1 = 1  ->  Minute
+Index 2 = 10 -> Urutan Audio
+Index 3 = 3  -> Audio Repeat
+Index 4 sd 10 -> Hari Minggu sd Sabtu (Jika berupa 0, maka hari itu tidak menggunakan jadwal tersebut)
+Daftar Alarm Sholat:	
+(0:1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+(0:25,1,1,9,0,0,0,0,0,0)
+Index 0 = 0 -> Jam
+Index 1 = 25  ->  Minute
+Index 2 = 1 -> Urutan Audio
+Index 3 = 1  -> Audio Repeat
+Index 4 sd 10 -> default semua hari adalah 0
+
+Versi Raspberry 
+
+Nama folder harus sebuah angka contoh 01 atau 02 dan seterusnya.
+Untuk memberikan nama File
+001: Surat Maryam
+002: Pembuka
+003: Penutup
+004: Pelajaran 1
+005: Pelajaran 2
+006: Pelajaran 3
+007: Istirahat 1
+008: Istirahat 2
+009: Istirahat 3
+010: Bel biasa
+011: Surat Yasin
+
+#Catatan:
+ Cara menulis nama file untuk angka 1 - 9 maka menambahkan dua angka nol di depannya contohnya (001.mp3).
+ Jika dua digit seperti halnya 10 - 99 cukup menambah satu angka nol di depannya contoh (010.mp3, 025.mp3).
+ Jika tiga digit seperti halnya 100 - 999 maka tidak ditambah angka nol di depannya contoh (111.mp3, 500.mp3).
+
+
+Versi Arduino 
+
+Nama folder harus sebuah nama Mp3 selain nama itu maka tidak terbaca.
+Untuk memberikan nama File
+0001: Surat Maryam
+0002: Pembuka
+0003: Penutup
+0004: Pelajaran 1
+0005: Pelajaran 2
+0006: Pelajaran 3
+0007: Istirahat 1
+0008: Istirahat 2
+0009: Istirahat 3
+0010: Bel biasa
+0011: Surat Yasin
+
+#Catatan:
+Cara menulis nama file untuk angka 1 - 9 maka menambahkan tiga angka nol di depannya contohnya (0001.mp3, 0008.mp3).
+ Jika dua digit seperti halnya 10 - 99 maka menambah dua angka nol di depannya contoh (0010.mp3, 0025.mp3).
+ Jika tiga digit seperti halnya 100 - 999 maka menambah satu angka nol di depannya contoh (0111.mp3, 0500.mp3).
+
+
+
+
+
+
+
+
+
+
